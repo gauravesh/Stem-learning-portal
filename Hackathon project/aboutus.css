@@ -1,0 +1,163 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the whole page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  /* Styling for the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  /* Styling for the navigation */
+  /* Add your navigation styling here */
+  
+  /* Styling for the about section */
+  .para1{
+    padding:5px;
+    margin:5px;
+    text-align: center;
+  }
+  .about1{
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+  .vision{
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+  .para2{
+    padding:15px;
+    padding-top: 10px;
+    margin:5px;
+    text-align: center;
+    font-size: lar;
+  }
+  .about {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h1,
+  .about h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Styling for the team section */
+/* Your existing styles ... */
+
+/* Styling for the team section */
+.team {
+    height: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .team h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .team-member h4 {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  
+.team-member p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+.meet{
+    padding-top:0px;
+    padding-bottom:40px;
+    
+  }
+.team-member-column img{
+        
+         height: 120px;
+         width: 120px;
+         border-radius: 50%;
+  }
+
+.Gauravesh{
+  position: absolute;
+  left:130px;
+  top:50px;
+}
+.Nethravathi{
+  position: absolute;
+   left:350px;
+   top:50px;
+}
+.Lakshmi{
+  position: absolute;
+   left:550px;
+   top:50px;
+}
+.rag{
+  position: absolute;
+   left:750px;
+   top:50px;
+}
+.pri{
+  position: absolute;
+   left:950px;
+   top:50px;
+}
+.expertise{
+  position: absolute;
+  top:250px;
+   left:500px;
+}
+  
+  /* Styling for the approach section */
+  /* Add your approach section styling here */
+  
+  /* Styling for the benefits section */
+  /* Add your benefits section styling here */
+  
+  /* Styling for the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .stars {
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    transition: color 0.2s;
+  }
+  .stars:hover {
+    color: orange;
+  }
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Courses</a></li>
+              <li><a href="About Us Page.html">About Us</a></li>
+              <li><a href="Contact Page.html">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+  <div class="container">
+    <h1>Feedback Page</h1>
+    <p>Please rate your experience:</p>
+    <div>
+      <span class="stars" onclick="rate(1)">★</span>
+      <span class="stars" onclick="rate(2)">★</span>
+      <span class="stars" onclick="rate(3)">★</span>
+      <span class="stars" onclick="rate(4)">★</span>
+      <span class="stars" onclick="rate(5)">★</span>
+    </div>
+    <p>Leave your feedback:</p>
+    <textarea id="feedbackText" placeholder="Enter your feedback here..."></textarea>
+    <button onclick="submitFeedback()">Submit</button>
+    <p id="feedbackMessage"></p>
+  </div>
+
+  <script>
+    let selectedRating = 0;
+
+    function rate(rating) {
+      selectedRating = rating;
+      updateStars(rating);
+    }
+
+    function updateStars(rating) {
+      const stars = document.querySelectorAll('.stars');
+      stars.forEach((star, index) => {
+        if (index < rating) {
+          star.style.color = 'orange';
+        } else {
+          star.style.color = 'black';
+        }
+      });
+    }
+
+    function submitFeedback() {
+      const feedbackText = document.getElementById('feedbackText').value;
+      if (selectedRating === 0) {
+        document.getElementById('feedbackMessage').textContent = 'Please select a rating before submitting.';
+      } else {
+        document.getElementById('feedbackMessage').textContent = `Thank you for your feedback! You rated: ${selectedRating} stars. Feedback: ${feedbackText}`;
+      }
+    }
+  </script>
+</body>
+</html>
