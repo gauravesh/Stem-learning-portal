@@ -1,0 +1,28 @@
+/* Your existing styles */
+
+/* Additional styling for the "box" div */
+.box {
+    background-color: #6a50a7; /* Purple */
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .box ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .box li {
+    margin-bottom: 0.5rem;
+  }
+  /* Center text */
+.center {
+    text-align: center;
+  }
+  

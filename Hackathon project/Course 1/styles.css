@@ -1,0 +1,64 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-image: linear-gradient(to bottom, #906cdc, #2d1096);
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .banner {
+    background-image: url('banner-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+  }
+  
+  .featured-courses {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+  }
+  
+  .course {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #31032a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+
+  
+  /* Add more CSS styles for other sections */
+  
+
+
+  iframe {
+    margin-top: 100px; /* Adjust the margin to move the iframe down */
+    margin-left: 50px; /* Adjust the margin to move the iframe to the right */
+  }
