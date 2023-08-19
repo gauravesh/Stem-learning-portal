@@ -7,6 +7,7 @@ body, h1, h2, h3, p, ul, li {
   /* Basic styling */
   body {
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(45deg, #9195f9, #a7a1fc);
   }
   
   header {

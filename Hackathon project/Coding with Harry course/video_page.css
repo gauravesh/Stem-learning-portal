@@ -1,0 +1,138 @@
+/* Additional styling for the "box" div */
+.box {
+  background-color: #6a50a7; /* Purple */
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Expand to fill available space */
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.box h2 {
+  margin-bottom: 1rem;
+}
+
+.box ul {
+  
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.box li {
+  color:whitesmoke;
+  margin-bottom: 0.5rem;
+}
+
+.box li a {
+  color: white; /* Font color for hyperlinks within list items */
+  text-decoration: underline; /* Add underline to hyperlinks */
+  margin-bottom: 1rem;
+
+}
+
+.box li a:visited {
+  color: #ffffff; /* Change font color to purple for visited links */
+}
+
+/* Center text */
+.title_for_playlist {
+  text-align: center;
+}
+
+/* Flex layout for video and box */
+.video-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add some space between the video and the box */
+}
+
+/* Styling for the video */
+.video-frame {
+  width: 1000px;
+  height: 600px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+}
+
+/* Styling for paragraphs */
+#paragraphs {
+  line-height: 1.8;
+}
+
+/* Styling for the main content container */
+#main-content {
+  min-width: 375px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Styling for the box and FAQ section */
+#content-container {
+  display: flex;
+  gap: 2rem; /* Adjust the gap between video and content */
+}
+
+/* Styling for the video container */
+#video-container {
+  flex: 1; /* Take up the available space */
+}
+
+/* Styling for the content container */
+#faq-container {
+  flex: 1; /* Take up the available space */
+}
+
+/* Styling for the FAQ section */
+.faq {
+  width: 80%;
+  max-width: 540px;
+  border-radius: 12px;
+  padding: 2em;
+  background-color: white;
+  box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+
+}
+
+.faq-header {
+  padding: 1.2em 1em;
+  font-weight: 600;
+  background-color: whitesmoke;
+  user-select: none;
+  cursor: pointer;
+}
+
+.faq-content {
+  padding: 1em;
+}
+
+.video-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video-buttons .cta-button {
+  display: inline-block;
+  background-color: black; /* Button background color */
+  color: white; /* Font color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px; /* Add margin for spacing */
+}
+
+.video-buttons .cta-button:hover {
+  background-color: #333; /* Darker background color on hover */
+}
